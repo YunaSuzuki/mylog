@@ -1,3 +1,93 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'compass';
+@import 'config/variables.scss';
+@import 'mixin.scss';
+
+body{
+  background-color: #FFFDF5;
+}
+
+ul{
+  list-style: none;
+}
+
+//index.html
+
+//language-icons
+ul.lang-wrapper{
+  text-align: right;
+  
+  li{
+    display: inline-block;
+    
+    img{
+      width: 50px;
+    }
+  }
+}
+
+//main
+.contents-wrapper{
+  @media #{$more-than-tb}{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.article-box{
+  min-height: 160px;
+  background-color: #fff;
+  color: $font-color;
+  @include box-shadow(1px 3px 6px 1px #e3e3e3);
+  @include border-radius(3px);
+  
+  @media #{$sp-size}{
+    width: 100%;
+    margin: 16px 0;
+    padding: 16px;
+  }
+  @media #{$more-than-tb}{
+    width: 48%;
+    margin: 8px 0;
+    padding: 16px;
+  }
+  
+  &__inner{
+    position: relative;
+    
+    @media #{$sp-size}{
+      height: 160px;
+    }
+    @media #{$more-than-tb}{
+      height: 100%;
+    }
+  }
+  
+  &__title{
+    position: absolute;
+    top: 50%;
+    -webkit-transform : translateY(-50%);
+    transform : translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #4E4E4E;
+    @include fontsize(24);
+  }
+  
+  &__tag-wrapper{
+    position: absolute;
+    bottom: 0;
+    padding-top: 24px;
+    
+    .tag-box{
+      display: inline-block;
+      padding: 4px 8px;
+      background-color: #f4f4f4;
+      @include fontsize(14);
+      @include border-radius(7px);
+    }
+  }
+}
