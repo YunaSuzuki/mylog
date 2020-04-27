@@ -87,4 +87,11 @@ ul.lang-wrapper {
   .sideblock__list li {
     margin: 8px 0; }
 
+#footer {
+  margin-top: 40px;
+  padding: 24px 0;
+  text-align: center;
+  color: #FFF;
+  background-color: #FFC14B; }
+
 /*# sourceMappingURL=style.css.map */
