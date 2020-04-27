@@ -20,7 +20,6 @@ ul.lang-wrapper {
 .article-box {
   min-height: 160px;
   background-color: #fff;
-  color: #898989;
   -moz-box-shadow: 1px 3px 6px 1px #e3e3e3;
   -webkit-box-shadow: 1px 3px 6px 1px #e3e3e3;
   box-shadow: 1px 3px 6px 1px #e3e3e3;
@@ -35,7 +34,7 @@ ul.lang-wrapper {
   @media (min-width: 768px) {
     .article-box {
       width: 48%;
-      margin: 8px 0;
+      margin-bottom: 8px;
       padding: 16px; } }
   .article-box__inner {
     position: relative; }
@@ -62,11 +61,30 @@ ul.lang-wrapper {
     .article-box__tag-wrapper .tag-box {
       display: inline-block;
       padding: 4px 8px;
+      color: #898989;
       background-color: #f4f4f4;
       font-size: 14px;
       font-size: 0.875rem;
       -moz-border-radius: 7px;
       -webkit-border-radius: 7px;
       border-radius: 7px; }
+
+.sidebar {
+  padding: 0;
+  background-color: #FFF; }
+  @media (max-width: 767px) {
+    .sidebar {
+      margin: 0 15px; } }
+
+.sideblock__title {
+  padding: 4px;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #FFC14B; }
+.sideblock__list {
+  color: #4E4E4E;
+  padding: 0 8px; }
+  .sideblock__list li {
+    margin: 8px 0; }
 
 /*# sourceMappingURL=style.css.map */

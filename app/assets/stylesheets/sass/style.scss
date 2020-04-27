@@ -40,7 +40,6 @@ ul.lang-wrapper{
 .article-box{
   min-height: 160px;
   background-color: #fff;
-  color: $font-color;
   @include box-shadow(1px 3px 6px 1px #e3e3e3);
   @include border-radius(3px);
   
@@ -51,7 +50,7 @@ ul.lang-wrapper{
   }
   @media #{$more-than-tb}{
     width: 48%;
-    margin: 8px 0;
+    margin-bottom: 8px;
     padding: 16px;
   }
   
@@ -73,7 +72,7 @@ ul.lang-wrapper{
     transform : translateY(-50%);
     width: 100%;
     text-align: center;
-    color: #4E4E4E;
+    color: $main-font-color;
     @include fontsize(24);
   }
   
@@ -85,9 +84,37 @@ ul.lang-wrapper{
     .tag-box{
       display: inline-block;
       padding: 4px 8px;
+      color: $sub-font-color;
       background-color: #f4f4f4;
       @include fontsize(14);
       @include border-radius(7px);
+    }
+  }
+}
+
+//sidebar
+.sidebar{
+  padding: 0;
+  background-color: #FFF;
+  
+  @media #{$sp-size}{
+    margin: 0 15px;
+  }
+}
+.sideblock{
+  &__title{
+    padding: 4px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #FFC14B;
+  }
+  
+  &__list{
+    color: $main-font-color;
+    padding: 0 8px;
+    
+    li{
+      margin: 8px 0;
     }
   }
 }
