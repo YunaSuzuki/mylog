@@ -66,3 +66,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'compass-rails', github: 'Compass/compass-rails'
 gem 'font-awesome-sass', '~> 5.4.1'
+gem 'kaminari', '~> 0.17.0'
