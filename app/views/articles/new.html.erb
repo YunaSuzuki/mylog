@@ -9,13 +9,15 @@
   </ul>
   <div class="row">
     <main class="main col-md-9"><!--9columns main-->
-      <div class="input-box">
-        <input type="text" class="input" placeholder="title"></input>
-      </div>
-      <div class="input-box">
-        <textarea type="text" class="input" placeholder="content" cols="40" rows="20"></textarea>
-      </div>
-      <button type="button" class="button">SEND BUTTON</button>
+      <%= form_tag(articles_path, method: :post) do %>
+        <div class="input-box">
+          <input type="text" class="input" placeholder="title" name="title"></input>
+        </div>
+        <div class="input-box">
+          <textarea type="text" class="input" placeholder="content" cols="40" rows="20" name="content"></textarea>
+        </div>
+        <input type="submit" value="SEND BUTTON" class="button"></input>
+      <% end %>
     </main><!--9columns main-->
     <div class="sidebar col-md-3 sidebar-wrapper"><!--3columns sidebar-->
       <div class="sideblock">
