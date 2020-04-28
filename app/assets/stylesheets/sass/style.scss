@@ -13,6 +13,14 @@ ul{
   list-style: none;
 }
 
+input, textarea{
+  background-color: #fff;
+  resize: none;
+  &::placeholder{
+    color: #e0e0e0;
+  }
+}
+
 //index.html
 
 //language-icons
@@ -127,6 +135,10 @@ ul.lang-wrapper{
   text-align: center;
   color: #FFF;
   background-color: #FFC14B;
+  
+  p{
+    display: inline;
+  }
 }
 
 //show
@@ -162,4 +174,24 @@ ul.lang-wrapper{
       padding-top: 56px;
     }
   }
+}
+
+//new
+.input{
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 8px 16px;
+  border: 1px solid #e3e3e3;
+  @include border-radius(2px);
+}
+
+.button{
+  width: 100%;
+  padding: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #FFF;
+  background-color: #249DEB;
+  @include box-shadow(1px 3px 6px 1px #e3e3e3);
+  @include border-radius(3px);
 }

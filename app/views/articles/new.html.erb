@@ -8,20 +8,14 @@
     <li><%= image_tag 'china' %></li>
   </ul>
   <div class="row">
-    <main class="main col-md-9 contents-wrapper"><!--9columns main-->
-      <% @articles.each do |article| %>
-        <div class="article-box">
-          <%= link_to(article_path(article.id), method: :get) do %>
-            <div class="article-box__inner">
-              <p class="article-box__title"><%= article.title %></p>
-              <div class="article-box__tag-wrapper">
-                <span class="tag-box"># traveling</span>
-                <span class="tag-box"># UK</span>
-              </div>
-            </div>
-          <% end %>
-        </div>
-      <% end %>
+    <main class="main col-md-9"><!--9columns main-->
+      <div class="input-box">
+        <input type="text" class="input" placeholder="title"></input>
+      </div>
+      <div class="input-box">
+        <textarea type="text" class="input" placeholder="content" cols="40" rows="20"></textarea>
+      </div>
+      <button type="button" class="button">SEND BUTTON</button>
     </main><!--9columns main-->
     <div class="sidebar col-md-3 sidebar-wrapper"><!--3columns sidebar-->
       <div class="sideblock">

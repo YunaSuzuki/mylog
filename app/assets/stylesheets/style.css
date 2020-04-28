@@ -4,6 +4,12 @@ body {
 ul {
   list-style: none; }
 
+input, textarea {
+  background-color: #fff;
+  resize: none; }
+  input::placeholder, textarea::placeholder {
+    color: #e0e0e0; }
+
 ul.lang-wrapper {
   text-align: right; }
   ul.lang-wrapper li {
@@ -99,6 +105,8 @@ ul.lang-wrapper {
   text-align: center;
   color: #FFF;
   background-color: #FFC14B; }
+  #footer p {
+    display: inline; }
 
 .content-box {
   width: 100%;
@@ -128,5 +136,28 @@ ul.lang-wrapper {
   @media (min-width: 768px) {
     .content-box__content {
       padding-top: 56px; } }
+
+.input {
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 8px 16px;
+  border: 1px solid #e3e3e3;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; }
+
+.button {
+  width: 100%;
+  padding: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #FFF;
+  background-color: #249DEB;
+  -moz-box-shadow: 1px 3px 6px 1px #e3e3e3;
+  -webkit-box-shadow: 1px 3px 6px 1px #e3e3e3;
+  box-shadow: 1px 3px 6px 1px #e3e3e3;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
 
 /*# sourceMappingURL=style.css.map */
