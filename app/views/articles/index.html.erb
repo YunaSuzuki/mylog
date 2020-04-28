@@ -9,42 +9,17 @@
   </ul>
   <div class="row">
     <main class="main col-md-9 contents-wrapper"><!--9columns main-->
-      <div class="article-box">
-        <div class="article-box__inner">
-          <p class="article-box__title">sample title</p>
-          <div class="article-box__tag-wrapper">
-            <span class="tag-box"># traveling</span>
-            <span class="tag-box"># UK</span>
+      <% @articles.each do |article| %>
+        <div class="article-box">
+          <div class="article-box__inner">
+            <p class="article-box__title"><%= article.title %></p>
+            <div class="article-box__tag-wrapper">
+              <span class="tag-box"># traveling</span>
+              <span class="tag-box"># UK</span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="article-box">
-        <div class="article-box__inner">
-          <p class="article-box__title">sample title</p>
-          <div class="article-box__tag-wrapper">
-            <span class="tag-box"># traveling</span>
-            <span class="tag-box"># UK</span>
-          </div>
-        </div>
-      </div>
-      <div class="article-box">
-        <div class="article-box__inner">
-          <p class="article-box__title">sample title</p>
-          <div class="article-box__tag-wrapper">
-            <span class="tag-box"># traveling</span>
-            <span class="tag-box"># UK</span>
-          </div>
-        </div>
-      </div>
-      <div class="article-box">
-        <div class="article-box__inner">
-          <p class="article-box__title">sample title</p>
-          <div class="article-box__tag-wrapper">
-            <span class="tag-box"># traveling</span>
-            <span class="tag-box"># UK</span>
-          </div>
-        </div>
-      </div>
+      <% end %>
     </main><!--9columns main-->
     <div class="sidebar col-md-3 sidebar-wrapper"><!--3columns sidebar-->
       <div class="sideblock">
