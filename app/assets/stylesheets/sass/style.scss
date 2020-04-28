@@ -96,6 +96,8 @@ ul.lang-wrapper{
 .sidebar{
   padding: 0;
   background-color: #FFF;
+  @include box-shadow(1px 3px 6px 1px #e3e3e3);
+  @include border-radius(3px);
   
   @media #{$sp-size}{
     margin: 0 15px;
@@ -125,4 +127,39 @@ ul.lang-wrapper{
   text-align: center;
   color: #FFF;
   background-color: #FFC14B;
+}
+
+//show
+.content-box{
+  width: 100%;
+  background-color: #FFF;
+  color: $main-font-color;
+  @include box-shadow(1px 3px 6px 1px #e3e3e3);
+  @include border-radius(3px);
+  
+  @media #{$sp-size}{
+    padding: 24px 24px 56px;
+  }
+  @media #{$more-than-tb}{
+    padding: 56px 40px 80px;
+  }
+  
+  &__title{
+    &:after{
+      content: '';
+      display: block;
+      clear: both;
+      width: 100%;
+      border: #FFC04A solid 1px;
+    }
+  }
+  
+  &__content{
+    @media #{$sp-size}{
+      padding-top: 24px;
+    }
+    @media #{$more-than-tb}{
+      padding-top: 56px;
+    }
+  }
 }

@@ -9,19 +9,12 @@
   </ul>
   <div class="row">
     <main class="main col-md-9 contents-wrapper"><!--9columns main-->
-      <% @articles.each do |article| %>
-        <div class="article-box">
-          <%= link_to(article_path(article.id), method: :get) do %>
-            <div class="article-box__inner">
-              <p class="article-box__title"><%= article.title %></p>
-              <div class="article-box__tag-wrapper">
-                <span class="tag-box"># traveling</span>
-                <span class="tag-box"># UK</span>
-              </div>
-            </div>
-          <% end %>
+      <div class="content-box">
+        <h1 class="content-box__title"><%= @article.title %></h1>
+        <div class="content-box__content">
+          <%= @article.content %>
         </div>
-      <% end %>
+      </div>
     </main><!--9columns main-->
     <div class="sidebar col-md-3 sidebar-wrapper"><!--3columns sidebar-->
       <div class="sideblock">
